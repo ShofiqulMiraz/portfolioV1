@@ -1,0 +1,63 @@
+.header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  @media (max-width: 770px) {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  }
+  @media (max-width: 600px) {
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
+  }
+  &__heading {
+    font-size: 30px;
+    text-transform: capitalize;
+
+    @media (max-width: 480px) {
+      font-size: 25px;
+    }
+    @media (max-width: 360px) {
+      font-size: 23px;
+    }
+  }
+
+  &__btn-all {
+    display: flex;
+    margin-top: 20px;
+    @media (max-width: 320px) {
+      flex-direction: column;
+    }
+  }
+  &__btn-1,
+  &__btn-2 {
+    font-weight: 500;
+    padding: 10px 30px;
+    &:not(:last-child) {
+      margin-right: 20px;
+      @media (max-width: 320px) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.typed {
+  font-size: 25px;
+  background-image: linear-gradient(120deg, #111110 0%, #2631cf 100%);
+  background-clip: text;
+  color: transparent;
+  @media (max-width: 320px) {
+    font-size: 20px;
+  }
+}
+
+.profile-picture {
+  width: 140px;
+  height: 140px;
+  border-radius: 80px;
+  border: 6px solid white;
+}

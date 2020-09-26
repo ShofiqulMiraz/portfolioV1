@@ -1,0 +1,22 @@
+.logo {
+  height: 30px;
+}
+.material-icons {
+  font-size: 28px;
+}
+.navbar-dark .navbar-toggler {
+  color: white !important;
+  border-color: transparent !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 500;
+  letter-spacing: 2px !important;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: #0abde3;
+  }
+}
+.active {
+  background-color: #0abde3;
+}

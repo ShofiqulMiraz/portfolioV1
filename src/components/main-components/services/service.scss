@@ -1,0 +1,32 @@
+.service-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  text-align: center;
+
+  .material-icons {
+    font-size: 40px;
+    color: black;
+    margin-bottom: 10px;
+  }
+  .card-heading {
+    text-transform: uppercase;
+  }
+  .card-para {
+    text-transform: capitalize;
+  }
+}
+.service-card {
+  min-height: 270px;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+.content {
+  &:hover {
+    cursor: pointer;
+    .material-icons {
+      color: #e66767;
+    }
+  }
+}
