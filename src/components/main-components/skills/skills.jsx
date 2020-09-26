@@ -1,13 +1,13 @@
 import React from "react";
 import "./skills.scss";
 import SkillItem from "./skills-item";
-import ReactLogo from "../../../assets/reactjs.webp";
-import HtmlLogo from "../../../assets/html5.webp";
-import CssLogo from "../../../assets/css.webp";
-import JavascriptLogo from "../../../assets/javascript.webp";
-import BootstrapLogo from "../../../assets/bootstrap5.webp";
-import JqueryLogo from "../../../assets/jquery.webp";
-import FirebaseLogo from "../../../assets/firebase.webp";
+import ReactLogo from "../../../assets/reactjs.png";
+import HtmlLogo from "../../../assets/html5.png";
+import CssLogo from "../../../assets/css.png";
+import JavascriptLogo from "../../../assets/javascript.png";
+import BootstrapLogo from "../../../assets/bootstrap5.png";
+import JqueryLogo from "../../../assets/jquery.png";
+import FirebaseLogo from "../../../assets/firebase.png";
 
 const Skills = () => {
   return (

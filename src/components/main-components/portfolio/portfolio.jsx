@@ -1,9 +1,9 @@
 import React from "react";
 import "./portfolio.scss";
 import PortfolioItem from "./portfolio-item";
-import Project1 from "../../../assets/project1.webp";
-import Project2 from "../../../assets/project2.webp";
-import Project3 from "../../../assets/project3.webp";
+import Project1 from "../../../assets/project1.jpg";
+import Project2 from "../../../assets/project2.jpg";
+import Project3 from "../../../assets/project3.jpg";
 
 const Portfolio = () => {
   return (
