@@ -18,7 +18,7 @@ const Nav = () => {
         onClick={navclickHandler}
       >
         <Link to="/" className="nav-link">
-          HOME
+          home
         </Link>
       </li>
       <li
@@ -67,7 +67,7 @@ const Nav = () => {
     <ul className="navbar-nav ml-auto">
       <li className="nav-item">
         <Link to="/" className="nav-link">
-          HOME
+          home
         </Link>
       </li>
       <li className="nav-item">
