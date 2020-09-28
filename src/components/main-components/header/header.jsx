@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./header.scss";
 import Typed from "react-typed";
 import Services from "../services/services";
@@ -7,12 +7,17 @@ import { Link } from "react-router-dom";
 import Contact from "../contact/contact";
 import Skills from "../skills/skills";
 import profilePic from "../../../assets/profilePic.jpg";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Header = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <div>
       <div className="container-fluid header">
-        <figure>
+        <figure data-aos="zoom-in">
           <img
             src={profilePic}
             className="img-fluid profile-picture"
@@ -38,12 +43,14 @@ const Header = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-raised btn-success header__btn-1"
+            data-aos="zoom-in"
           >
             download cv
           </a>
           <Link
             to="/contact"
             className="btn btn-raised btn-success header__btn-2"
+            data-aos="zoom-in"
           >
             contact me
           </Link>

@@ -17,13 +17,13 @@ const Contact = () => {
       <p className="site-para">tell us about your project</p>
       {submitted ? (
         <div className="text-center">
-          <h3 className="text-capitalize">
+          <h3 className="text-capitalize" data-aos="zoom-in">
             Thanks for your Submission. We will contact you soon.
           </h3>
         </div>
       ) : (
         <form onSubmit={handleSubmit}>
-          <div className="form-group">
+          <div className="form-group" data-aos="zoom-in">
             <label htmlFor="email">Email Address</label>
             <input
               type="email"
@@ -31,9 +31,13 @@ const Contact = () => {
               placeholder="name@example.com"
               required
               onChange={(e) => setEmail(e.target.value)}
+              
             />
+            <small id="emailHelp" className="form-text text-muted">
+              We'll Never Share Your Email With Anyone Else.
+            </small>
           </div>
-          <div className="form-group">
+          <div className="form-group" data-aos="zoom-in">
             <label htmlFor="message">Your Project Details</label>
             <textarea
               className="form-control"

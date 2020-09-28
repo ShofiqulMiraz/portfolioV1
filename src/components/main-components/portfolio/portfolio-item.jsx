@@ -2,7 +2,7 @@ import React from "react";
 
 const PortfolioItem = ({ title, src, href }) => {
   return (
-    <div className="col-md-4 col-sm-6 col-xs-12 col-xl-4">
+    <div className="col-md-4 col-sm-6 col-xs-12 col-xl-4" data-aos="zoom-in">
       <div className="content">
         <div className="content-overlay">
           <a href={href} target="_blank" rel="noopener noreferrer">

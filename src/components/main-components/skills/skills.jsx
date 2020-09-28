@@ -8,6 +8,7 @@ import JavascriptLogo from "../../../assets/javascript.png";
 import BootstrapLogo from "../../../assets/bootstrap5.png";
 import JqueryLogo from "../../../assets/jquery.png";
 import FirebaseLogo from "../../../assets/firebase.png";
+import SassLogo from "../../../assets/sass.png";
 
 const Skills = () => {
   return (
@@ -22,6 +23,7 @@ const Skills = () => {
         <SkillItem logo={BootstrapLogo} title={`bootstrap`} />
         <SkillItem logo={JqueryLogo} title={`jquery`} />
         <SkillItem logo={FirebaseLogo} title={`firebase`} />
+        <SkillItem logo={SassLogo} title={`sass`} />
       </div>
     </div>
   );

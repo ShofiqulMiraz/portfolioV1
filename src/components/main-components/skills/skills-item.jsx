@@ -2,7 +2,7 @@ import React from "react";
 
 const SkillItem = ({ logo, title }) => {
   return (
-    <div className="col mb-2">
+    <div className="col mb-2" data-aos="zoom-in">
       <div className="card skill-card">
         <div className="card-body skill-card-body">
           <figure>
