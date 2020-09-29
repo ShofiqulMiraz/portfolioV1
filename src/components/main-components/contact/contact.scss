@@ -1,0 +1,16 @@
+.social-btn {
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.1) rotate(360deg);
+  }
+}
+
+.submit-btn {
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+  &:focus {
+    transform: scale(0.9);
+  }
+}
