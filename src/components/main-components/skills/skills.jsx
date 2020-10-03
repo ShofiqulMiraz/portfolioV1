@@ -18,7 +18,7 @@ const Skills = () => {
     <div className="container mt-5 mb-5">
       <h2 className="site-head">skills </h2>
       <p className="site-para">technology we use</p>
-      <div className="row">
+      <div className="skill-item">
         <SkillItem logo={ReactLogo} title={`react`} />
         <SkillItem logo={HtmlLogo} title={`html`} />
         <SkillItem logo={CssLogo} title={`css`} />

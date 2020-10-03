@@ -1,9 +1,14 @@
+// Skill card CSS
+.skill-item {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 20px;
+}
 .skill-card-body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px 10px 7px 10px;
   text-align: center;
 }
 .skill-logo {
@@ -13,10 +18,4 @@
   text-transform: uppercase;
   font-weight: 600;
   font-size: 16px;
-}
-figure {
-  margin-bottom: 7px !important;
-}
-h5 {
-  margin-bottom: 0 !important;
 }
