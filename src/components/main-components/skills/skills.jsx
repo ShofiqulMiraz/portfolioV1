@@ -1,14 +1,17 @@
 import React from "react";
 import "./skills.scss";
 import SkillItem from "./skills-item";
-import ReactLogo from "../../../assets/reactjs.png";
-import HtmlLogo from "../../../assets/html5.png";
-import CssLogo from "../../../assets/css.png";
-import JavascriptLogo from "../../../assets/javascript.png";
-import BootstrapLogo from "../../../assets/bootstrap5.png";
-import JqueryLogo from "../../../assets/jquery.png";
-import FirebaseLogo from "../../../assets/firebase.png";
-import SassLogo from "../../../assets/sass.png";
+import ReactLogo from "../../../assets/react.svg";
+import HtmlLogo from "../../../assets/html.svg";
+import CssLogo from "../../../assets/css.svg";
+import JavascriptLogo from "../../../assets/javascript.svg";
+import BootstrapLogo from "../../../assets/bootstrap.svg";
+import JqueryLogo from "../../../assets/jquery.svg";
+import FirebaseLogo from "../../../assets/firebase.svg";
+import SassLogo from "../../../assets/sass.svg";
+import PwaLogo from "../../../assets/pwa-logo.svg";
+import GitLogo from "../../../assets/git.svg";
+import MaterializeLogo from "../../../assets/materializecss.svg";
 
 const Skills = () => {
   return (
@@ -24,6 +27,9 @@ const Skills = () => {
         <SkillItem logo={JqueryLogo} title={`jquery`} />
         <SkillItem logo={FirebaseLogo} title={`firebase`} />
         <SkillItem logo={SassLogo} title={`sass`} />
+        <SkillItem logo={PwaLogo} title={`pwa`} />
+        <SkillItem logo={MaterializeLogo} title={`materialize`} />
+        <SkillItem logo={GitLogo} title={`git`} />
       </div>
     </div>
   );

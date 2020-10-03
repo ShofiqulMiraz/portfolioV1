@@ -28,8 +28,8 @@ const Header = () => {
             "I'm a DREAMER",
             "I'm a LEARNER",
           ]}
-          typeSpeed={40}
-          backSpeed={50}
+          typeSpeed={60}
+          backSpeed={60}
           loop
         ></Typed>
         <div className="header__btn-all">

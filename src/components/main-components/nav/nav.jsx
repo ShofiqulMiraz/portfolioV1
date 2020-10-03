@@ -93,32 +93,30 @@ const Nav = () => {
     </ul>
   );
   return (
-    <div className="conatiner">
-      <nav className="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
-        <Link to="/" className="navbar-brand">
-          <img src={Logo} className="logo" alt="logo" />
-        </Link>
-        <button
-          className="navbar-toggler"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-          type="button"
-          onClick={navclickHandler}
-        >
-          {navclicked ? (
-            <span className="material-icons">close</span>
-          ) : (
-            <span className="material-icons">menu</span>
-          )}
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          {window.innerWidth < 576 ? mobileNav() : DesktopNav()}
-        </div>
-      </nav>
-    </div>
+    <nav className="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+      <Link to="/" className="navbar-brand">
+        <img src={Logo} className="logo" alt="logo" />
+      </Link>
+      <button
+        className="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        type="button"
+        onClick={navclickHandler}
+      >
+        {navclicked ? (
+          <span className="material-icons">close</span>
+        ) : (
+          <span className="material-icons">menu</span>
+        )}
+      </button>
+      <div className="collapse navbar-collapse" id="navbarNav">
+        {window.innerWidth < 576 ? mobileNav() : DesktopNav()}
+      </div>
+    </nav>
   );
 };
 
