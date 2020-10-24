@@ -14,9 +14,13 @@ const Portfolio = () => {
         <PortfolioItem
           title="nexter"
           src={Project1}
-          href="https://nexter-shofiqul.web.app/"
+          href="https://nexter-shofiqul.netlify.app/"
         />
-        <PortfolioItem title="natours" src={Project2} href="#" />
+        <PortfolioItem
+          title="natours"
+          src={Project2}
+          href="https://natours-shofiqul.netlify.app/"
+        />
         <PortfolioItem
           title="trillo"
           src={Project3}
