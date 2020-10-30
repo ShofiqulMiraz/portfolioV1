@@ -1,9 +1,9 @@
 import React from "react";
 import "./portfolio.scss";
 import PortfolioItem from "./portfolio-item";
-import Project1 from "../../../assets/project1.jpg";
-import Project2 from "../../../assets/project2.jpg";
-import Project3 from "../../../assets/project3.jpg";
+import natours from "../../../assets/portfolio-projects/natours.png";
+import nexter from "../../../assets/portfolio-projects/nexter.png";
+import trillo from "../../../assets/portfolio-projects/trillo.png";
 
 const Portfolio = () => {
   return (
@@ -13,17 +13,17 @@ const Portfolio = () => {
       <div className="row">
         <PortfolioItem
           title="nexter"
-          src={Project1}
+          src={nexter}
           href="https://nexter-shofiqul.netlify.app/"
         />
         <PortfolioItem
           title="natours"
-          src={Project2}
+          src={natours}
           href="https://natours-shofiqul.netlify.app/"
         />
         <PortfolioItem
           title="trillo"
-          src={Project3}
+          src={trillo}
           href="https://trillo-shofiqul.netlify.app/"
         />
       </div>

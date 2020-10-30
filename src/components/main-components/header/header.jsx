@@ -6,7 +6,7 @@ import Portfolio from "../portfolio/portfolio";
 import { Link } from "react-router-dom";
 import Contact from "../contact/contact";
 import Skills from "../skills/skills";
-import profilePic from "../../../assets/profilePic.jpg";
+import profilePic from "../../../assets/logo/profilePic.jpg";
 
 const Header = () => {
   return (

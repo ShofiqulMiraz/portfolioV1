@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./nav.scss";
 import { Link, NavLink } from "react-router-dom";
-import Logo from "../../../assets/logo-white.png";
+import Logo from "../../../assets/logo/logo-white.png";
 
 const Nav = () => {
   const [navclicked, setNavclicked] = useState(false);

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { FormSubmit } from "../firebase/firebase-utils";
-import SocialContact from "./social-contact";
 import "./contact.scss";
 
 const Contact = () => {
@@ -49,40 +48,18 @@ const Contact = () => {
       </button>
     </form>
   );
-  const SocialUI = () => (
-    <div className="container pt-3 text-center">
-      <div className="row">
-        <div className="col">
-          <SocialContact
-            logo="logo-facebook"
-            link="https://web.facebook.com/ShofiqulMiraz/"
-            tooltip="Connect on Facebook"
-          />
-          <SocialContact
-            logo="logo-github"
-            link="https://github.com/ShofiqulMiraz"
-            tooltip="Connect on Github"
-          />
-          <SocialContact
-            logo="logo-linkedin"
-            link="https://www.linkedin.com/in/shofiqulmiraz/"
-            tooltip="Connect on LinkedIn"
-          />
-          <SocialContact
-            logo="logo-instagram"
-            link="https://www.instagram.com/shofiqulmiraz/"
-            tooltip="Connect on instagram"
-          />
-        </div>
-      </div>
-    </div>
-  );
+  // const SocialUI = () => (
+  //   <div className="container pt-3 text-center">
+  //     <div className="row">
+  //       <div className="col"></div>
+  //     </div>
+  //   </div>
+  // );
   return (
     <div className="container mt-5 mb-5">
       <h2 className="site-head">Contact</h2>
       <p className="site-para">tell us about your project</p>
       {submitted ? SubmittedUI() : FormUI()}
-      {SocialUI()}
     </div>
   );
 };

@@ -1,17 +1,17 @@
 import React from "react";
 import "./skills.scss";
 import SkillItem from "./skills-item";
-import ReactLogo from "../../../assets/react.svg";
-import HtmlLogo from "../../../assets/html.svg";
-import CssLogo from "../../../assets/css.svg";
-import JavascriptLogo from "../../../assets/javascript.svg";
-import BootstrapLogo from "../../../assets/bootstrap.svg";
-import JqueryLogo from "../../../assets/jquery.svg";
-import FirebaseLogo from "../../../assets/firebase.svg";
-import SassLogo from "../../../assets/sass.svg";
-import PwaLogo from "../../../assets/pwa-logo.svg";
-import GitLogo from "../../../assets/git.svg";
-import MaterializeLogo from "../../../assets/materializecss.svg";
+import ReactLogo from "../../../assets/skill-icons/react.svg";
+import HtmlLogo from "../../../assets/skill-icons/html.svg";
+import CssLogo from "../../../assets/skill-icons/css.svg";
+import JavascriptLogo from "../../../assets/skill-icons/javascript.svg";
+import BootstrapLogo from "../../../assets/skill-icons/bootstrap.svg";
+import JqueryLogo from "../../../assets/skill-icons/jquery.svg";
+import FirebaseLogo from "../../../assets/skill-icons/firebase.svg";
+import SassLogo from "../../../assets/skill-icons/sass.svg";
+import PwaLogo from "../../../assets/skill-icons/pwa-logo.svg";
+import GitLogo from "../../../assets/skill-icons/git.svg";
+import MaterializeLogo from "../../../assets/skill-icons/materializecss.svg";
 
 const Skills = () => {
   return (
