@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./nav.scss";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../../../assets/logo/logo-white.png";
+import MenuOpen from "./../../../assets/menu/menu.svg";
+import MenuClose from "./../../../assets/menu/close.svg";
 
 const Nav = () => {
   const [navclicked, setNavclicked] = useState(false);
@@ -108,9 +110,9 @@ const Nav = () => {
         onClick={navclickHandler}
       >
         {navclicked ? (
-          <span className="material-icons">close</span>
+          <img src={MenuClose} alt="menuopen" className="img-fluid menuclose" />
         ) : (
-          <span className="material-icons">menu</span>
+          <img src={MenuOpen} alt="menuopen" className="img-fluid menuopen" />
         )}
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">

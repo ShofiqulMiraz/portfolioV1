@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import { FormSubmit } from "../firebase/firebase-utils";
 import "./contact.scss";
+import SocialContact from "./social-contact";
+import facebook from "./../../../assets/social-contact/facebook.svg";
+import twitter from "./../../../assets/social-contact/twitter.svg";
+import github from "./../../../assets/social-contact/github-sign.svg";
+import instagram from "./../../../assets/social-contact/instagram.svg";
+import linkedin from "./../../../assets/social-contact/linkedin.svg";
 
 const Contact = () => {
   const [email, setEmail] = useState("");
@@ -48,18 +54,40 @@ const Contact = () => {
       </button>
     </form>
   );
-  // const SocialUI = () => (
-  //   <div className="container pt-3 text-center">
-  //     <div className="row">
-  //       <div className="col"></div>
-  //     </div>
-  //   </div>
-  // );
+  const SocialUI = () => (
+    <div className="container pt-3 text-center">
+      <div className="row">
+        <div className="col">
+          <SocialContact
+            logo={facebook}
+            link="https://facebook.com/ShofiqulMiraz/"
+          />
+          <SocialContact
+            logo={twitter}
+            link="https://twitter.com/ShofiqulMiraz"
+          />
+          <SocialContact
+            logo={linkedin}
+            link="https://www.linkedin.com/in/shofiqulmiraz/"
+          />
+          <SocialContact
+            logo={github}
+            link="https://github.com/ShofiqulMiraz"
+          />
+          <SocialContact
+            logo={instagram}
+            link="https://www.instagram.com/shofiqulmiraz/"
+          />
+        </div>
+      </div>
+    </div>
+  );
   return (
     <div className="container mt-5 mb-5">
       <h2 className="site-head">Contact</h2>
       <p className="site-para">tell us about your project</p>
       {submitted ? SubmittedUI() : FormUI()}
+      {SocialUI()}
     </div>
   );
 };

@@ -1,1 +1,11 @@
-
+.social-logo {
+  height: 45px;
+  padding: 0 10px;
+  @media (max-width: 390px) {
+    height: 30px;
+  }
+  @media (max-width: 310px) {
+    height: 25px;
+    padding: 0 5px;
+  }
+}
