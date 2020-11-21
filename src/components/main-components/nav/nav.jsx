@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./nav.scss";
-import { Link, NavLink } from "react-router-dom";
 import Logo from "../../../assets/logo/logo-white.png";
 import MenuOpen from "./../../../assets/menu/menu.svg";
 import MenuClose from "./../../../assets/menu/close.svg";
@@ -19,9 +18,9 @@ const Nav = () => {
         data-target="#navbarNav"
         onClick={navclickHandler}
       >
-        <Link to="/" className="nav-link">
+        <a className="nav-link" href="#home">
           home
-        </Link>
+        </a>
       </li>
       <li
         className="nav-item"
@@ -29,9 +28,9 @@ const Nav = () => {
         data-target="#navbarNav"
         onClick={navclickHandler}
       >
-        <Link to="/services" className="nav-link">
+        <a className="nav-link" href="#services">
           services
-        </Link>
+        </a>
       </li>
       <li
         className="nav-item"
@@ -39,9 +38,9 @@ const Nav = () => {
         data-target="#navbarNav"
         onClick={navclickHandler}
       >
-        <Link to="/skills" className="nav-link">
+        <a className="nav-link" href="#skills">
           skills
-        </Link>
+        </a>
       </li>
       <li
         className="nav-item"
@@ -49,9 +48,9 @@ const Nav = () => {
         data-target="#navbarNav"
         onClick={navclickHandler}
       >
-        <Link to="/portfolio" className="nav-link">
+        <a className="nav-link" href="#portfolio">
           portfolio
-        </Link>
+        </a>
       </li>
       <li
         className="nav-item"
@@ -59,46 +58,46 @@ const Nav = () => {
         data-target="#navbarNav"
         onClick={navclickHandler}
       >
-        <Link to="/contact" className="nav-link">
+        <a className="nav-link" href="#contact">
           contact
-        </Link>
+        </a>
       </li>
     </ul>
   );
   const DesktopNav = () => (
     <ul className="navbar-nav ml-auto">
       <li className="nav-item">
-        <Link to="/" className="nav-link">
+        <a className="nav-link" href="#home">
           home
-        </Link>
+        </a>
       </li>
       <li className="nav-item">
-        <NavLink to="/services" className="nav-link">
+        <a className="nav-link" href="#services">
           services
-        </NavLink>
+        </a>
       </li>
       <li className="nav-item">
-        <NavLink to="/skills" className="nav-link">
+        <a className="nav-link" href="#skills">
           skills
-        </NavLink>
+        </a>
       </li>
       <li className="nav-item">
-        <NavLink to="/portfolio" className="nav-link">
+        <a className="nav-link" href="#portfolio">
           portfolio
-        </NavLink>
+        </a>
       </li>
       <li className="nav-item">
-        <NavLink to="/contact" className="nav-link">
+        <a className="nav-link" href="#contact">
           contact
-        </NavLink>
+        </a>
       </li>
     </ul>
   );
   return (
     <nav className="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
-      <Link to="/" className="navbar-brand">
+      <a href="#home" className="navbar-brand">
         <img src={Logo} className="logo" alt="logo" />
-      </Link>
+      </a>
       <button
         className="navbar-toggler"
         data-toggle="collapse"

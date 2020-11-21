@@ -26,7 +26,7 @@ const Contact = () => {
     </div>
   );
   const FormUI = () => (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="pt-4">
       <div className="form-group">
         <label htmlFor="email">Email Address</label>
         <input
@@ -83,7 +83,7 @@ const Contact = () => {
     </div>
   );
   return (
-    <div className="container mt-5 mb-5">
+    <div className="container" id="contact">
       <h2 className="site-head">Contact</h2>
       <p className="site-para">tell us about your project</p>
       {submitted ? SubmittedUI() : FormUI()}
