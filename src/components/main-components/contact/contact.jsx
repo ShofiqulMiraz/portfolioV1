@@ -21,7 +21,7 @@ const Contact = () => {
   const SubmittedUI = () => (
     <div className="text-center">
       <h3 className="text-capitalize">
-        Thanks for your Submission. We will contact you soon.
+        Thanks for your Submission. We will contact you very soon.
       </h3>
     </div>
   );
