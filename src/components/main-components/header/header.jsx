@@ -1,12 +1,17 @@
 import React from "react";
 import "./header.scss";
 import Typed from "react-typed";
+import Services from "../services/services";
+import Portfolio from "../portfolio/portfolio";
+import { Link } from "react-router-dom";
+import Contact from "../contact/contact";
+import Skills from "../skills/skills";
 import profilePic from "../../../assets/logo/profilePic.jpg";
 
 const Header = () => {
   return (
     <div>
-      <div className="container-fluid header" id="home">
+      <div className="container-fluid header">
         <figure data-aos="zoom-in" data-aos-duration="2000">
           <img
             src={profilePic}
@@ -38,16 +43,20 @@ const Header = () => {
           >
             download cv
           </a>
-          <a
-            href="#contact"
+          <Link
+            to="/contact"
             className="btn btn-raised btn-success header__btn-2"
             data-aos="zoom-in"
             data-aos-duration="2000"
           >
             contact me
-          </a>
+          </Link>
         </div>
       </div>
+      <Services />
+      <Skills />
+      <Portfolio />
+      <Contact />
     </div>
   );
 };

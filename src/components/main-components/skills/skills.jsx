@@ -15,10 +15,10 @@ import MaterializeLogo from "../../../assets/skill-icons/materializecss.svg";
 
 const Skills = () => {
   return (
-    <div className="container" id="skills">
+    <div className="container mt-5 mb-5">
       <h2 className="site-head">skills </h2>
       <p className="site-para">technology we use</p>
-      <div className="skill-item pt-4">
+      <div className="skill-item">
         <SkillItem logo={ReactLogo} title={`react`} />
         <SkillItem logo={HtmlLogo} title={`html`} />
         <SkillItem logo={CssLogo} title={`css`} />

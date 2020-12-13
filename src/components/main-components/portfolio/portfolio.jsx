@@ -7,10 +7,10 @@ import trillo from "../../../assets/portfolio-projects/trillo.png";
 
 const Portfolio = () => {
   return (
-    <div className="container-fluid portfolio" id="portfolio">
+    <div className="container-fluid portfolio mt-5 mb-5">
       <h2 className="site-head">Portfolio </h2>
       <p className="site-para">our latest work</p>
-      <div className="row pt-4">
+      <div className="row">
         <PortfolioItem
           title="nexter"
           src={nexter}

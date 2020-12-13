@@ -1,5 +1,5 @@
 .logo {
-  height: 1.875rem;
+  height: 30px;
 }
 .navbar-dark .navbar-toggler {
   color: white !important;
@@ -8,18 +8,20 @@
 .navbar-dark .navbar-nav .nav-link {
   color: white !important;
   font-weight: 300;
-  letter-spacing: 0.125rem !important;
+  letter-spacing: 2px !important;
   transition: all 0.3s ease-in-out;
-  font-size: 1rem;
+  font-size: 16px;
   text-transform: capitalize !important;
   &:hover {
     background-color: #0abde3;
   }
 }
-
+.active {
+  background-color: #0abde3;
+}
 .menuopen,
 .menuclose {
-  height: 1.5rem;
+  height: 24px;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(289deg)
     brightness(108%) contrast(105%);
 }

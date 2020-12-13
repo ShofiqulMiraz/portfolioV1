@@ -10,10 +10,10 @@ import seoFriendly from "./../../../assets/service-icon/seo-friendly.svg";
 
 const Services = () => {
   return (
-    <div className="container" id="services">
+    <div className="container mt-5 mb-5">
       <h2 className="site-head">services </h2>
       <p className="site-para">service we provide</p>
-      <div className="row pt-4">
+      <div className="row">
         <Service
           heading="web design"
           image={webDesign}

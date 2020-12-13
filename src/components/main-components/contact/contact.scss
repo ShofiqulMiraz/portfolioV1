@@ -1,16 +1,11 @@
-#contact {
-  padding-top: 5rem;
-  padding-bottom: 3.125rem;
-}
-
 .social-logo {
-  height: 2.5rem;
-  padding: 0 0.625rem;
-  @media only screen and (max-width: 24.375rem) {
-    height: 1.875rem;
+  height: 45px;
+  padding: 0 10px;
+  @media (max-width: 390px) {
+    height: 30px;
   }
-  @media only screen and (max-width: 19.375rem) {
-    height: 1.5625rem;
-    padding: 0 0.3125rem;
+  @media (max-width: 310px) {
+    height: 25px;
+    padding: 0 5px;
   }
 }
