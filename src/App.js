@@ -8,6 +8,7 @@ import Services from "./components/main-components/services/services";
 import Skills from "./components/main-components/skills/skills";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Helmet } from "react-helmet";
 
 function App() {
   useEffect(() => {
@@ -18,11 +19,40 @@ function App() {
       <div className="App">
         <Nav />
         <Switch>
-          <Route exact path="/" component={Header}></Route>
-          <Route path="/services" component={Services}></Route>
-          <Route path="/skills" component={Skills}></Route>
-          <Route path="/portfolio" component={Portfolio}></Route>
-          <Route path="/contact" component={Contact}></Route>
+          <Route exact path="/">
+            <Helmet>
+              <title>Shofiqul | Homepage</title>
+            </Helmet>
+            <Header />
+            <Services />
+            <Skills />
+            <Portfolio />
+            <Contact />
+          </Route>
+          <Route path="/services" component={Services}>
+            <Helmet>
+              <title>Shofiqul | Services</title>
+            </Helmet>
+            <Services />
+          </Route>
+          <Route path="/skills">
+            <Helmet>
+              <title>Shofiqul | Skills</title>
+            </Helmet>
+            <Skills />
+          </Route>
+          <Route path="/portfolio">
+            <Helmet>
+              <title>Shofiqul | Portfolio</title>
+            </Helmet>
+            <Portfolio />
+          </Route>
+          <Route path="/contact">
+            <Helmet>
+              <title>Shofiqul | Contact</title>
+            </Helmet>
+            <Contact />
+          </Route>
         </Switch>
       </div>
     </Router>

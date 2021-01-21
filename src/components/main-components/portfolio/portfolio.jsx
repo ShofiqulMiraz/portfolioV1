@@ -4,6 +4,7 @@ import PortfolioItem from "./portfolio-item";
 import natours from "../../../assets/portfolio-projects/natours.png";
 import nexter from "../../../assets/portfolio-projects/nexter.png";
 import trillo from "../../../assets/portfolio-projects/trillo.png";
+import tesla from "../../../assets/portfolio-projects/tesla.png";
 
 const Portfolio = () => {
   return (
@@ -25,6 +26,11 @@ const Portfolio = () => {
           title="trillo"
           src={trillo}
           href="https://trillo-shofiqul.netlify.app/"
+        />
+        <PortfolioItem
+          title="tesla clone"
+          src={tesla}
+          href="https://tesla-clone-seven.vercel.app/"
         />
       </div>
     </div>

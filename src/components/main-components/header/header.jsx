@@ -1,11 +1,7 @@
 import React from "react";
 import "./header.scss";
 import Typed from "react-typed";
-import Services from "../services/services";
-import Portfolio from "../portfolio/portfolio";
 import { Link } from "react-router-dom";
-import Contact from "../contact/contact";
-import Skills from "../skills/skills";
 import profilePic from "../../../assets/logo/profilePic.jpg";
 
 const Header = () => {
@@ -53,10 +49,6 @@ const Header = () => {
           </Link>
         </div>
       </div>
-      <Services />
-      <Skills />
-      <Portfolio />
-      <Contact />
     </div>
   );
 };
